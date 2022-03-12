@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Montserrat', 'sans-serif';
+    user-select: none;
+}
+
+#container {
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 75vw;
+    min-width: 1500px;
+    height: 70vh;
+    min-height: 750px;
+    background-color: #363636;
+
+    box-sizing: border-box;
+    border-radius: 3rem;
+}
+
+nav {
+    width: 15rem;
+    border-radius: 3rem 0 0 3rem;
+    float: left;
+    background-color: #1f1f1f;
+    height: 100%;
+    /* box-shadow: 0.2px 3px 3px black; */
+}
+
+.history-container {
+    width: 15rem;
+    border-radius: 0 3rem 3rem 0;
+    float: right;
+    background-color: #1f1f1f;
+    height: 100%;
+    /* box-shadow: 0.2px 3px 3px black; */
+}
+
+.history-container h1 {
+    color: white;
+    text-align: center;
+    padding: 1rem 1rem 0 1rem;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.under-transaction-bar {
+    width: 11rem;
+    background-color: #5c5c5c;
+    padding: 0.2px;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.accounts {
+    position: absolute;
+    margin: 0 16%;
+    width: 68%;
+    height: 100%;
+}
+
+.accounts h1 {
+    color: white;
+    padding: 1rem 0 0 2rem;
+    font-weight: 500;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    margin: auto;
+    width: 50%;
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 1.5vh 3rem;
+    text-align: center;
+}
+
+li {
+    margin-left: -2.5rem;
+    width: 15rem;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    top: 55%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+a:hover {
+    background-color: #363636;
+    border-radius: 5rem;
+}
+
+.logo {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#bank-logo {
+    width: 10rem;
+    height: 10rem;
+}
+.logo p {
+    color: #fff;
+    font-weight: 200;
+    font-size: 1.5rem;
+    margin-top: -0.3rem;
+    margin-left: 0.9rem;
+}
+
+.under-logo-bar {
+    background-color: #5c5c5c;
+    padding: 0.2px;
+    border-radius: 10px;
+    margin-left: -2.5rem;
+}
+
+.all-accounts-container {
+    margin-top: 5%;
+    padding: 0 5%;
+}
+
+.self-account {
+    position: absolute;
+    width: 40%;
+    height: 35rem;
+    border: 0.7px solid rgb(116, 116, 116);
+    border-radius: 2rem;
+}
+
+.self-account h5 {
+    color: white;
+    margin-top: 0px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(116, 116, 116);
+    border-radius: 2rem 2rem 0 0;
+}
+
+.card-display {
+    margin-top: 35px;
+    margin-left: 106px;
+    width: 20rem;
+    height: 10rem;
+    border-radius: 1.5rem;
+    background-image: url("../img/creditcard.jpeg");
+}
+
+.account-balance, .balance, .account-id-title {
+    color:white;
+    text-align: center;
+    font-size: 30px;
+}
+
+.balance {
+    color:green;
+}
+
+.account-id-title {
+    margin-top: -20px;
+    font-size: 20px;
+}
+
+.accountd-id {
+
+}
+
+.shared-accounts {
+    margin-left: 40rem;
+    position: absolute;
+    width: 40%;
+    height: 35rem;
+    border: 0.7px solid rgb(116, 116, 116);
+    border-radius: 2rem;
+}
+
+.shared-accounts h5 {
+    color: white;
+    margin-top: 0px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(116, 116, 116);
+    border-radius: 2rem 2rem 0 0;
+}
