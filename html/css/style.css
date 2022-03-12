@@ -16,9 +16,9 @@ body {
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    width: 75vw;
+    width: 75rem;
     min-width: 1500px;
-    height: 70vh;
+    height: 30rem;
     min-height: 750px;
     background-color: #363636;
 
@@ -60,18 +60,7 @@ nav {
     margin: auto;
 }
 
-.accounts {
-    position: absolute;
-    margin: 0 16%;
-    width: 68%;
-    height: 100%;
-}
 
-.accounts h1 {
-    color: white;
-    padding: 1rem 0 0 2rem;
-    font-weight: 500;
-}
 
 ul {
     list-style: none;
@@ -79,11 +68,11 @@ ul {
 
 a {
     margin: auto;
-    width: 50%;
+    width: 70%;
     color: white;
     font-size: 1.2rem;
     text-decoration: none;
-    padding: 1.5vh 3rem;
+    padding: 1.5vh 2rem;
     text-align: center;
 }
 
@@ -130,70 +119,109 @@ a:hover {
     margin-left: -2.5rem;
 }
 
-.all-accounts-container {
-    margin-top: 5%;
-    padding: 0 5%;
+.homepage {
+    position: absolute;
+    margin-left: 17.5rem;
+    margin-top: 1.5rem;
+    color: #fff;
 }
 
-.self-account {
+.account-infos {
     position: absolute;
-    width: 40%;
-    height: 35rem;
-    border: 0.7px solid rgb(116, 116, 116);
+    background-color: #252525;
+    width: 35rem;
+    height: 32rem;
     border-radius: 2rem;
 }
 
-.self-account h5 {
-    color: white;
-    margin-top: 0px;
-    padding: 10px;
+.account-infos h1, p {
+    padding-top: 1rem;
     text-align: center;
-    background-color: rgb(116, 116, 116);
-    border-radius: 2rem 2rem 0 0;
 }
+
+.account-infos p {
+    margin-top: -1.5rem;
+    font-size: 2.5rem;
+    color: green;
+}
+
+
+
 
 .card-display {
-    margin-top: 35px;
-    margin-left: 106px;
-    width: 20rem;
-    height: 10rem;
-    border-radius: 1.5rem;
-    background-image: url("../img/creditcard.jpeg");
-}
-
-.account-balance, .balance, .account-id-title {
-    color:white;
-    text-align: center;
-    font-size: 30px;
-}
-
-.balance {
-    color:green;
-}
-
-.account-id-title {
-    margin-top: -20px;
-    font-size: 20px;
-}
-
-.accountd-id {
-
-}
-
-.shared-accounts {
-    margin-left: 40rem;
-    position: absolute;
-    width: 40%;
-    height: 35rem;
-    border: 0.7px solid rgb(116, 116, 116);
+    padding-top: 1rem;
+    background-image: url('../img/creditcard.jpeg');
+    background-repeat: no-repeat;
+    width: 25rem;
+    height: 12.5rem;
+    margin: auto;
     border-radius: 2rem;
 }
 
-.shared-accounts h5 {
+
+.account-actions {
+    margin-left: 38rem;
+    position: absolute;
+    background-color: #252525;
+    width: 20rem;
+    height: 32rem;
+    border-radius: 2rem;
+}
+
+
+.account-action-deposit, .account-action-withdraw, .account-action-transfer {
+    width: 90%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-between;
+    padding: 1.3rem 0 2.5rem 0;
+}
+
+
+
+.account-action-deposit a , .account-action-withdraw a, .account-action-transfer a {
+    height: 100%;
+    padding: 3.5rem 2rem;
+    border-radius: 1.75rem;
+    background-image: linear-gradient(to right, #fc5c7d, #6a82fb);
+}
+
+.account-actions a:hover {
+    border-radius: 2rem;
+}
+
+.account-id {
+    width: 62%;
+    position: absolute;
+    background-color: #252525;
+    margin: 40.5rem 17.5rem;
+    border-radius: 2rem;
+}
+
+.account-id p {
     color: white;
-    margin-top: 0px;
-    padding: 10px;
+    padding: 0.5rem;
+}
+
+.card-display .card-number, .card-display .card-name {
+    padding-top: 2.4rem;
+    color: white;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.card-display .card-number {
     text-align: center;
-    background-color: rgb(116, 116, 116);
-    border-radius: 2rem 2rem 0 0;
+    font-size: 2.5rem;
+}
+
+.card-display .card-name {
+    margin-left: 0rem;
+}
+
+.card-display .card-name span {
+    padding-left: 3.1rem;
 }
