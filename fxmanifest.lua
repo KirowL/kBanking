@@ -5,6 +5,7 @@ game 'gta5'
 ui_page 'html/index.html'
 
 server_scripts {  
+	'@mysql-async/lib/MySQL.lua',
 	'config.lua',
 	'server/main.lua'
 }

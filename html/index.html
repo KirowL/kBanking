@@ -22,7 +22,7 @@
                     <a href=""><i class="fa-solid fa-house"></i> Mon compte</a>
                     <a href=""><i class="fa-solid fa-people-arrows-left-right"></i> Comptes partagés</a>
                     <a href=""><i class="fa-solid fa-gear"></i> Paramètres</a>
-                    <a href="" style="color:red;"><i class="fa-solid fa-arrow-right-from-bracket"></i> Déconnexion</a>
+                    <a href="" style="color:red;" id="exit"><i class="fa-solid fa-arrow-right-from-bracket"></i> Déconnexion</a>
                 </li>
 
             </ul>
@@ -30,15 +30,14 @@
 
         <!-- Titre -->
         <div class="homepage">
-            <h1>Bienvenue, {NAME}.</h1>
+            <div id="home-welcoming"></div>
             <div class="account-infos">
                 <h1>Votre compte</h1>
-                <div class="card-display">
-                    <p class="card-number">**** **** **** 5555</p>
-                    <p class="card-name">{NAME} <span class="padleft">05/2164</span></p>
+                <div class="card-display" id="card-display">
+                    <!-- <p class="card-name">{NAME} <span class="padleft">05/2164</span></p> -->
                 </div>
                 <h1>Solde</h1>
-                <p>$ 188 544</p>
+                <div id="self-account-balance"></div>
             </div>
             <div class="account-actions">
                 <div class="account-action-deposit">
@@ -53,8 +52,8 @@
             </div>
         </div>
 
-        <div class="account-id">
-            <p><i class="fa-solid fa-credit-card"></i> ID: {ACCOUNT-ID}</p>
+        <div class="account-id" id="account-id">
+            <!-- <p><i class="fa-solid fa-credit-card"></i> ID: {ACCOUNT-ID}</p> -->
         </div>
 
         <!-- Historique des transactions -->
@@ -66,6 +65,6 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
-	<!-- <script src="js/index.js" type="text/javascript"></script> -->
+	<script src="js/index.js" type="text/javascript"></script>
 </body>
 </html>
