@@ -54,3 +54,11 @@ RegisterNUICallback("closeMenu", function()
     SetNuiFocus(false, false)
     isMenuOpened = false
 end)
+
+RegisterNUICallback("NUIFocusOff", function()
+    SetNuiFocus(false, false)
+end)
+
+RegisterNUICallback("deposit", function(data)
+    print(json.encode(data))
+end)

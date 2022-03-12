@@ -19,7 +19,7 @@
                     <div class="under-logo-bar"></div>
                 </div>
                 <li>
-                    <a href=""><i class="fa-solid fa-house"></i> Mon compte</a>
+                    <a href="index.html"><i class="fa-solid fa-house"></i> Mon compte</a>
                     <a href=""><i class="fa-solid fa-people-arrows-left-right"></i> Comptes partagés</a>
                     <a href=""><i class="fa-solid fa-gear"></i> Paramètres</a>
                     <a href="" style="color:red;" id="exit"><i class="fa-solid fa-arrow-right-from-bracket"></i> Déconnexion</a>
@@ -41,14 +41,16 @@
             </div>
             <div class="account-actions">
                 <div class="account-action-deposit">
-                    <a><i class="fa-solid fa-money-bill"></i> Déposer</a>
+                    <a id="deposit"><i class="fa-solid fa-money-bill"></i> Déposer</a>
                 </div>
                 <div class="account-action-withdraw">
-                    <a><i class="fa-solid fa-money-bill-wave"></i> Retirer</a>
+                    <a id="withdraw" onClick="hideActions()"><i class="fa-solid fa-money-bill-wave"></i> Retirer</a>
                 </div>
                 <div class="account-action-transfer">
-                    <a><i class="fa-solid fa-arrow-right-arrow-left"></i> Transférer</a>
+                    <a id="transfer" onClick="hideActions()"><i class="fa-solid fa-arrow-right-arrow-left"></i> Transférer</a>
                 </div>
+
+                <div id="deposit-form"></div>
             </div>
         </div>
 

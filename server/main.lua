@@ -13,7 +13,8 @@ ESX.RegisterServerCallback("kBanking:RequestPlayerData", function(source, cb)
         firstName = pFirstName,
         fullName = xPlayer.name,
         bankID = playerBankId,
-        accountID = xPlayer.get("account_id")
+        accountID = xPlayer.get("account_id"),
+        money = xPlayer.getMoney()
     })
 end)
 

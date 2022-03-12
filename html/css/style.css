@@ -225,3 +225,51 @@ a:hover {
 .card-display .card-name span {
     padding-left: 3.1rem;
 }
+
+#deposit-form {
+    width: 90%;
+    height: 90%;
+    margin-top: -30rem;
+    text-align: center;
+    padding-left: 1rem;
+}
+
+input[type=text], select {
+    position: absolute;
+    width: 80%;
+    padding: 1rem 20px;
+    margin: -3rem -8rem;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    box-sizing: border-box;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 110%;
+}
+
+form p {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    padding: 0;
+}
+
+form button, input[type=submit] {
+    margin: 0.1rem 0 0.1rem 0;
+    border: none;
+    text-decoration: none;
+    background-image: linear-gradient(to right, #fc5c7d, #6a82fb);
+    color: #fff;
+    width: 8rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+input[type=submit] {
+    width: 80%;
+}
